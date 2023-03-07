@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* resets ......................................*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* utility class ................................*/
+
+.container {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+
+}
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+    /* padding: 12px 0px; */
+}
+
+.prim-button {
+
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.prim-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.sec-button {
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+
+}
+
+.sec-button:hover {
+    border-color: var(--accent-color);
+}
+
+/* Top banner................................... */
+
+.top-banner {
+    background-color: #e74694;
+    background-image: url(./assets/asset\ 32.png);
+    background-size: 300px;
+}
+
+.banner-text {
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav bar..................................... */
+
+.main-nav {
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+
+.company-logo img {
+    width: 200px
+}
+
+.nav-links {
+    flex-basis: 700px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 30px;
+}
+
+/* Header................................ */
+
+header {
+    padding: 50px var(--padding-inline-section);
+}
+
+.h-section {
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.h-left {
+    max-width: 40vw;
+}
+
+.h-left h2 {
+    margin-top: 20px;
+}
+
+.h-left p {
+    margin-top: 20px;
+}
+
+.h-left a {
+    margin-top: 20px;
+}
+
+.h-right img {
+    width: 600px;
+}
+
+/* companys logos */
+
+.companies-header {
+    text-align: center;
+    margin: 20px;
+    color: var(--primary-text-color);
+}
+
+.logos {
+    justify-content: space-between;
+}
+
+.logo {
+    height: 45px;
+}
+
+/* features section ........................ */
+.features-section {
+    background-image: url(./assets/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.f-header {
+    text-align: center;
+}
+
+.f-header a {
+    margin-top: 20px;
+}
+
+.f-area {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.f-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+/* <!-- Big features section  --> */
+
+.big-features-section {
+    margin-top: 50px;
+
+}
+
+.big-f-container {
+    gap: 30px;
+}
+
+.f-img img {
+    width: 100%;
+
+}
+
+.f-desc {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.p-logo img {
+    width: 40%;
+}
+
+.avatar img {
+    width: 70%;
+}
+
+/* platform-header */
+
+.example-section {
+    margin-top: 50px;
+}
+
+.example-header {
+    text-align: center;
+}
+
+.example-header a {
+    margin-top: 20px;
+}
+
+.example-area {
+    margin-top: 40px;
+    gap: 20px;
+
+}
+
+.example-card {
+    width: 30%;
+    min-height: 300px;
+    background: black;
+    position: relative;
+    transition: 0.3s ease-out;
+}
+
+.example-card:hover {
+    box-shadow: 0 0 10px #171717;
+}
+
+.card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+
+}
+
+.book {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 36.jpeg);
+    background-size: cover;
+}
+
+.tree {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 37.jpeg);
+    background-size: cover;
+}
+
+.audience {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 38.jpeg);
+    background-size: cover;
+}
+
+.visitors {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url(./assets/asset\ 39.jpeg);
+    background-size: cover;
+}
+
+/* <!-- cta section   --> */
+.cta {
+    margin-top: 50px;
+    background-color: #183b54;
+    padding: 40px;
+}
+
+.cta-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+
+
+}
+
+/* Footer */
+
+footer {
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #ebf2fa;
+
+}
+
+.footer-body {
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* sub footer */
+.sub-footer {
+    /* margin-top: 50px; */
+    padding: 30px;
+    background-color: #b9cde4;
+}
+
+.sub-footer-conatainer {
+    justify-content: space-between;
+}
